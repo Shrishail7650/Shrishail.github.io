@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Inline styles for the button */
+    .styled-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background: linear-gradient(135deg, #4CAF50, #2E7D32);
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .styled-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .styled-button:active {
+      transform: scale(1);
+      box-shadow: none;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4CAF50, #2E7D32);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #FFD700;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #2E7D32;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+    .about-section {
+      margin: 20px 0;
+      padding: 20px;
+      border: 1px solid #4CAF50;
+      border-radius: 10px;
+      background-color: #F9F9F9;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-section {
+      margin: 20px 0;
+      padding: 20px;
+      border: 1px solid #4CAF50;
+      border-radius: 10px;
+      background-color: #F9F9F9;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .social-links a {
+      color: #4CAF50;
+      font-size: 24px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      transform: scale(1.2);
+      color: #2E7D32;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to My Personal Website</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="biodata.html">Biodata</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <section class="about-section">
+      <h2>About Me</h2>
+      <p><b>Hello! I am Shrishail Patil, a professional and an aspiring Engineer. I have a passion for learning and creating innovative solutions in the field of technology. I enjoy coding, designing, and exploring new technologies to solve real-world problems.</b></p>
+      <button class="styled-button" onclick="displayMessage()">Say Hello</button>
+    </section>
+
+    <section class="contact-section">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out to me for any queries:</p>
+      <p>Email: <a href="mailto:shrishail7650@gmail.com">shrishail7650@gmail.com</a></p>
+      <p>Phone: +91 9880711290</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/shrishail-patil-77b83825b/" target="_blank">&#x1F465;</a>
+        <a href="https://github.com/Shrishail7650/" target="_blank">&#x1F5C3;</a>
+      </div>
+    </section>
+
+    <!-- JavaScript for Button Interaction -->
+    <script>
+      function displayMessage() {
+        alert("Thanks for visiting! Feel free to explore!");
+      }
+    </script>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Shrishail. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
